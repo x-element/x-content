@@ -1,0 +1,26 @@
+{
+  "name": "x-content",
+  "version": "1.0.0",
+  "homepage": "http://x-element.github.io/x-content/",
+  "authors": [
+    "AndryGP tizianosperati"
+  ],
+  "description": "x-content encaspulates a content page into a web-component",
+  "main": "x-content.html",
+  "keywords": [
+    "polymer",
+    "x-content",
+    "content",
+    "web-components",
+    "web-component",
+    "x-element"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
