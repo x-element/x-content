@@ -1,5 +1,71 @@
 <link rel="import" href="components/polymer/polymer.html">
+<!--
+`x-content` encapsulates a content page into a web component.
 
+    <x-content id="content">
+      <h3> Title of content </h3>
+      <p> Lorem ipsum </p>
+    </x-content>
+
+`x-content` has a title, a content, many features composed by photo, title and subtitle.
+
+Title and content:
+
+    <div id= "description" class="col-md-12 col-md-push-0">
+      <content select="h3"></content>
+      <content select="p"></content>
+    </div>
+
+These values are described as content in the `x-content` tag, as shown above.
+
+Feature's Picture:
+
+    <template repeat="{{ feature in features }}">
+      <img src=" images/{{ feature.picture }} ">
+
+Feature's Title:
+    
+    <h4>{{ feature.title }} </h4>   
+
+Feature's Subtitle:
+
+    <h5>{{ feature.subtitle }}</h5> 
+
+
+These values are setted in the `demo.html` file, as described below:
+   
+
+    <script>
+      var content = document.getElementById('content');
+      var features = 
+        [
+          {
+            title: "title 1" ,
+            subtitle: "subtitle 1",
+            picture: "content.jpg"
+          },
+          {
+            title: "title 2" ,
+            subtitle: "subtitle 2",
+            picture: "content.jpg"
+          },
+          {
+            title: "title 3" ,
+            subtitle: "subtitle 3",
+            picture: "content.jpg"
+          },
+        ];
+      content.features = features;
+    </script>
+
+
+
+
+@element x-content
+@blurb Element providing page content.
+@status alpha
+@homepage https://x-element.github.io/x-content
+-->
 <polymer-element name="x-content">
   <template>
  
