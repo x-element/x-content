@@ -1,4 +1,4 @@
-x-conent
+x-content
 ========
 
 Polymer content element
