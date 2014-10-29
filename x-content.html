@@ -1,0 +1,56 @@
+<link rel="import" href="components/polymer/polymer.html">
+
+<polymer-element name="x-content">
+  <template>
+ 
+  <link rel="stylesheet" href="components/bootstrap/bootstrap.min.css">
+
+   <style>
+   #description {
+    margin-top: 100px;
+    padding-bottom: 100px;
+   }
+   img {
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   }
+  
+   h4 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    font-variant: small-caps;
+   }
+   h5 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 200;
+  }
+  #container {
+    margin-bottom: 50px;
+  }
+  </style>
+   <div id="container" class="container">
+    <div id= "description" class="col-md-12 col-md-push-0">
+      <content select="h3"></content>
+      <content select="p"></content>
+    </div>
+      <template repeat="{{ feature in features }}">
+        <div class="col-md-4">
+          <img src=" images/{{ feature.picture }} ">
+          <h4>{{ feature.title }} </h4>
+          <h5>{{ feature.subtitle }}</h5> 
+        </div>
+      </template>
+  </template>
+  <script>
+    Polymer('x-content', {
+
+      
+
+    });
+</script>
+</polymer-element>

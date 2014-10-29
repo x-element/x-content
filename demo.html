@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<style> 
+		body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'RobotoDraft', sans-serif;
+
+    }
+		h3 {
+      		text-align: center;
+      		font-size: 24px;
+      		font-weight: 500;
+      		font-variant: small-caps;
+   		}
+   		p {
+   			text-align: center;
+      		font-size: 18px;
+      		font-weight: 200;
+   		}
+	</style>
+  <head>
+    <script src="components/platform/platform.js"></script>
+    <link rel="import" href="x-content.html">
+    <link rel="import" href="components/font-roboto/roboto.html">
+
+
+  </head>
+
+  <body>
+  
+  
+  	<x-content id="content">
+  	<h3> Title of content </h3>
+  	<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat, augue id pulvinar vulputate, turpis nunc aliquam lacus, vel rhoncus nunc quam aliquam nunc. Pellentesque in condimentum nibh. Mauris sed ornare nunc. Maecenas magna arcu, faucibus non consequat eu, molestie a lectus. Nunc aliquet consectetur lacus, in tincidunt arcu blandit rutrum. Maecenas vulputate turpis id nibh suscipit commodo. Nulla ullamcorper magna eget lectus malesuada, in ornare mi placerat. Maecenas et tortor et mauris congue scelerisque in ac dolor. Mauris ac rhoncus arcu, scelerisque auctor justo. Sed risus turpis, ultricies non ex non, facilisis faucibus ipsum. In suscipit orci non est.</p>
+  	</x-content>
+    <script>
+    var content = document.getElementById('content');
+    var features = 
+        [
+          {
+            title: "title 1" ,
+            subtitle: "subtitle 1",
+            picture: "content.jpg"
+          },
+          {
+            title: "title 2" ,
+            subtitle: "subtitle 2",
+            picture: "content.jpg"
+          },
+          {
+            title: "title 3" ,
+            subtitle: "subtitle 3",
+            picture: "content.jpg"
+          },
+        ];
+      content.features = features;
+    </script>
+    
+  </body>
+</html>
