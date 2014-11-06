@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "homepage": "http://x-element.github.io/x-content/",
   "authors": [
-    "AndryGP tizianosperati"
+  	{ "name": "Andrea D'Amelio", "email": "andrea.damelio@gmail.com" },
+  	{ "name": "Tiziano Sperati", "email": "tiziano.sperati@gmail.com" },
   ],
   "description": "x-content encaspulates a content page into a web-component",
   "main": "x-content.html",
